@@ -1,0 +1,30 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #002D62, #00308F, #0047AB, #6CB4EE, #89CFF0);
+}
+
+.clock {
+    border: 6px solid black;
+    height: 23%;
+    width: 12%;
+    border-radius: 60%;
+    position: relative;
+    top: 35%;
+    left: 45%;
+}
+
+.hand {
+    border: 3px solid black;
+    width: 90px;
+    position: absolute;
+    margin-left: 15px;
+    top: 49%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
