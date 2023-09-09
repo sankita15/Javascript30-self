@@ -15,12 +15,18 @@
     <input type="range" name="blur" id="blur" min="10" max="200" data-sizing="px">
 
     <label for="base-color">Spacing:</label>
-    <input type="range" name="base-color" id="base-color" min="10" max="200">
+    <input type="color" name="base-color" id="base-color">
 </div>
 
 <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="landscape">
 
 <style>
+
+:root {
+    --spacing: 10px;
+    --blur: 10px;
+    --base-color: #ffc600;
+}
 
 body {
     text-align: center;
@@ -32,7 +38,7 @@ body {
 }
 
 .header-substring {
-
+    color: var(--base-color);
 }
 
 .controls {
@@ -41,6 +47,12 @@ body {
 
 input {
     width: 100px;
+}
+
+img {
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background-color: var(--base-color);
 }
 
 
